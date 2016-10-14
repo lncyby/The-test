@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style media="screen">
+  #head {
+    text-align: center;
+  }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#head").buttonMarkup({icon:"delete",iconpos:"right"});
+
+    })
+</script>
+<body>
+  <a href="#pop" data-rel="popup">点击</a>
+  <div data-role="popup" id="pop">
+    <div data-role="header" id="head">标题</div>
+      <br>
+      <p>你确定要删除你所选的文件吗？</p>
+      <br>
+    <div data-role="footer" id="foot">
+      <button>Cancle</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

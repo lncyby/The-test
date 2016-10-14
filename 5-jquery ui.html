@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery - UI</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="css/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <style>
+    ul {
+      list-style: none;
+    }
+      li{
+        float: left;
+      }
+      #tabs {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      #content {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+      }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+          $("a").button();
+          $(".q").hide(this);
+          $("#tags").tabs();
+          $("a:first").click(function(){
+            $(this).show("#hello1")
+
+
+
+          })
+        });
+    </script>
+  </head>
+  <body>
+      <div id="tabs">
+          <ul>
+            <li><a href="#hello1">hello</a></li>
+            <li><a href="#hello2">hello</a></li>
+            <li><a href="#hello3">hello</a></li>
+            <li><a href="#hello4">hello</a></li>
+          </ul>
+
+      <div id="content">
+        <div class=q id="hello1">111111</div>
+        <div class=q id="hello2">222222</div>
+        <div class=q id="hello3">333333</div>
+        <div class=q id="hello4">444444</div>
+      </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery - UI</title>
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./css/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.css" type="text/css">
+    <style media="screen">
+      .op {
+        background: pink;
+      }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+          $("#div").accordion();
+          $("p").mouseover(function(){
+            $(this).addClass("op").mouseout(function(){
+              $(this).removeClass("op")
+            })
+          })
+        });
+    </script>
+  </head>
+  <body>
+      <div id="div">
+          <h3>开心</h3>
+          <div>
+              <p>开心很快乐</p>
+              <p>开心很快乐</p>
+              <p>开心很快乐</p>
+          </div>
+          <h3>快乐</h3>
+          <div>
+              <p>快乐是一件很幸福的事</p>
+              <p>快乐是一件很幸福的事</p>
+              <p>快乐是一件很幸福的事</p>
+          </div>
+          <h3>每</h3>
+          <div>
+              <p>每个人都是不同的</p>
+              <p>每个人都是不同的</p>
+              <p>每个人都是不同的</p>
+          </div>
+          <h3>一天</h3>
+          <div>
+              <p>一天的时间很短暂</p>
+              <p>一天的时间很短暂</p>
+              <p>一天的时间很短暂</p>
+          </div>
+      </div>
+  </body>
+</html>

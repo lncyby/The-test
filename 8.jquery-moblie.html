@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    #pdd {
+      background: lightgray;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").buttonMarkup({ iconpos: "right"});
+    })
+</script>
+<body>
+  <div data-role="content" id="pdd">
+      <div data-type="horizontal">
+        <button type="button" data-icon="arrow-l"  name="button">左箭头图标</button>
+        <br>
+        <button type="button" data-icon="arrow-r"  name="button">右箭头图标</button>
+        <br>
+        <button type="button" data-icon="arrow-u"  name="button">上箭头图标</button>
+        <br>
+        <button type="button" data-icon="arrow-d"  name="button">下箭头图标</button>
+        <br>
+        <button type="button" data-icon="plus"  name="button">加号图标</button>
+        <br>
+        <button type="button" data-icon="minus"  name="button">减号图标</button>
+        <br>
+        <button type="button" data-icon="delete"  name="button">删除图标</button>
+        <br>
+        <button type="button" data-icon="check"  name="button">检查图标</button>
+        <br>
+      </div>
+   </div>
+</body>
+</html>

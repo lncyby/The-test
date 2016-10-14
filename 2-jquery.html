@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery</title>
+</head>
+<script src="./js/jquery-3.1.1.js"></script>
+<style media="screen">
+    ul {list-style: none;}
+    ul li{
+      width: 100px;
+      border: 1px solid black;
+      margin: 2px;
+    }
+    .back {
+      box-shadow: 0 0 3px red;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("li").mouseover(function(){
+      $(this).addClass("back");}).mouseout(function(){
+      $(this).removeClass("back");})
+    })
+</script>
+<body>
+    <div>
+      <ul>
+        <li>学生</li>
+        <li>学生</li>
+        <li>学生</li>
+        <li>学生</li>
+      </ul>
+    </div>
+</body>
+</html>

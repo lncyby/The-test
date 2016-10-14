@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery-ui</title>
+</head>
+<script src="./js/jquery-3.1.1.js"></script>
+<script src="./css/jquery-ui.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css" type="text/css">
+<style media="screen">
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#date").datepicker({changeYear:true,yearRange:"-1:+2"});
+    })
+</script>
+<body>
+    <p>日期：<input type="text" id="date"></p>
+</body>
+</html>

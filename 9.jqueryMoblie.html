@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<body>
+  <div data-role="page" id="page1">
+      <div role="main">
+          <a href="#page2" data-transition="fade">跳转到page2</a>
+      </div>
+   </div>
+
+   <div data-role="page" id="page2">
+       <div  role="main">
+            <a href="#page1" data-transition="fade">跳转到page1</a>
+       </div>
+    </div>
+
+</body>
+</html>

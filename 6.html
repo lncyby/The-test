@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery - UI</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./css/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" type="text/css">
+    <style media="screen">
+      #dialog {
+        color: red;
+      }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+          $("#btn").click(function(){
+          $("#dialog").dialog({ autoOpen:false});
+          $("#btn").click(function(){
+              $("#dialog").dialog("open");
+          });
+          })
+          $("#dialog").dialog({ buttons:[{text:"确定", icon:"ui-icon-check",click:function(){
+            $(this).dialog("close");
+          }}, {text:"取消", icon:"ui-icon-close", click:function(){
+            $(this).dialog("close");
+          }}]
+          })
+
+        });
+    </script>
+  </head>
+  <body>
+      <button id="btn">点击这里</button>
+      <hr>
+      <div id="dialog" title="警告">
+        你确定要删除你所选的文件吗？
+        <hr>
+      </div>
+  </body>
+</html>

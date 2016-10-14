@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./css/jquery-ui.js"></script>
+    <!-- <link rel="stylesheet" href="./css/jquery-ui.css" type="text/css"> -->
+    <style media="screen">
+      div {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        border: 1px solid red;
+      }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+          $('#btn').click(function(){
+              $('div').toggle("shake", {direction: 'right'}, 2000, function(){
+              })
+          })
+        });
+    </script>
+  </head>
+  <body>
+      <button id="btn">显示/隐藏</button>
+      <hr>
+      <div></div>
+  </body>
+</html>

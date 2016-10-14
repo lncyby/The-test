@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery-ui</title>
+</head>
+<script src="./js/jquery-3.1.1.js"></script>
+<script src="./css/jquery-ui.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css" type="text/css">
+<style media="screen">
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#btn").button();
+      $(this).click(function(){
+        $("div").css("backgroundColor","red")
+      })
+    })
+</script>
+<body>
+    <div></div>
+    <a href="#" id="btn">点击</a>
+</body>
+</html>
