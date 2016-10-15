@@ -1,4 +1,4 @@
-1.[第一题](./1-jQuery-ui.html)
+1.[第一题](https://github.com/lncyby/The-test/1-jQuery-ui.html)
 2.[第二题]
 3.[第三题]
 4.[第四题]
